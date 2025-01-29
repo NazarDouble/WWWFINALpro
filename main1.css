@@ -1,0 +1,71 @@
+body {
+    margin: 1cm;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('abstraktni-fonovi-zobrazenna-psd-hd-fon_275096-original.png'); 
+    background-size: cover;
+    background-position: center; 
+}
+.wrapper {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.856); 
+    border-radius: 4px; 
+    overflow: hidden; 
+}
+.contentpicture {
+    text-align: center;
+    margin: 20px;
+}
+.contentpicture h1 {
+    font-size: 46px; 
+    font-weight: bold; 
+    color: #333;
+}
+.text1 {
+    text-align: left;
+    margin: 20px;
+}
+.text2 {
+    text-align: left;
+    margin: 20px;
+}
+.picture {
+    display: flex; 
+    justify-content: left; 
+    margin: 20px;
+    position: relative; 
+}
+.picture1 {
+    display: flex; 
+    justify-content: left; 
+    margin: 20px;
+    position: relative; 
+}
+.picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.picture1 img {
+    max-width: 80%;
+    height: 80%;
+    border-radius: 8px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px; 
+    color: #333;
+}
+.hidden-text1 {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px; 
+    color: #333;
+}

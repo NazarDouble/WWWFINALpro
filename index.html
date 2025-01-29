@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Double Naz">
+    <title>ArtG Web</title>
+    <link rel="icon" href="g.png" type="image/png"> 
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="second.css"> 
+</head>
+<body>
+    <video class="video-background" autoplay loop muted disablePictureInPicture>
+        <source src="153957-806571952_small.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>Welcome to ArtGallery</h1>
+        <p>Step into a world where art meets emotion, creativity intertwines with innovation, and the boundaries of imagination are explored. At ArtGallery, we believe in the power of art to inspire, challenge, and connect us all. Our carefully curated collection showcases a variety of styles and mediums, from timeless classics to contemporary works that speak to today’s world. Whether you’re an avid art lover, a casual visitor, or a first-time guest, we invite you to explore, engage, and experience the transformative power of art.</p>
+        <div class="image-slider">
+            <div class="slider-wrapper">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+                <img src="4.jpg" alt="Image 4">
+                <img src="5.jpg" alt="Image 5">
+                <img src="6.jpg" alt="Image 6">
+            </div>
+        </div>
+        <a href="index1.html" class="see-more-button">See More</a>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 ArtG Web. All rights reserved.</p>
+            <div class="email-and-info">
+                <div class="contact-info">
+                    <div class="email-container">
+                        <img src="BackgroundEraser_20250128_204801873.png" alt="Icon 1" class="icon">
+                        <p class="email">nazarkoval942@gmail.com</p>
+                    </div>
+                    <div class="telegram-container">
+                        <img src="BackgroundEraser_20250128_204520263.png" alt="Icon 2" class="icon">
+                        <p class="telegram">@predator0551</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const images = document.querySelectorAll('.slider-wrapper img');
+        const imageWidth = images[0].clientWidth;
+        let scrollAmount = 0; 
+
+        function slideImages() {
+            scrollAmount += 1; 
+            sliderWrapper.style.transform = `translateX(-${scrollAmount}px)`; 
+
+            
+            if (scrollAmount >= imageWidth * (images.length / 2)) {
+                scrollAmount = 0;
+                sliderWrapper.style.transition = 'none'; 
+                sliderWrapper.style.transform = `translateX(0)`; 
+                setTimeout(() => {
+                    sliderWrapper.style.transition = 'transform 0.5s ease';
+                }, 50); 
+            }
+        }
+
+        setInterval(slideImages, 30);
+    </script>
+</body>
+</html>
